@@ -17,9 +17,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm64: {
+        android_arm: {
             srcs: [
-                "proprietary/vendor/lib64/libacdbloader.so",
+                "proprietary/vendor/lib/libacdbloader.so",
             ],
             shared_libs: [
                 "libcutils",
@@ -38,7 +38,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "64",
+    compile_multilib: "32",
     prefer: true,
     soc_specific: true,
 }
